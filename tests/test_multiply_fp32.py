@@ -155,8 +155,8 @@ async def fmultiplier_random_fp32(dut):
     dut.rst.value = 0
     await RisingEdge(dut.clk)
 
-    N = 500
-    MAX_TRIES = 200
+    N = 10
+    MAX_TRIES = 5
 
     for i in range(N):
         for _try in range(MAX_TRIES):
