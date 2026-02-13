@@ -198,7 +198,7 @@ def test_fmultiplier_runner():
     sim = os.getenv("SIM", "icarus")
     proj_path = Path(__file__).resolve().parent.parent
 
-    sources = [proj_path / "golden" / "multiply_fp32.sv"]
+    sources = [proj_path / "sources" / "multiply_fp32.sv"]
 
     runner = get_runner(sim)
     runner.build(
